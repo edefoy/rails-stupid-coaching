@@ -1,0 +1,8 @@
+<% @questions.each do |question| %>
+  <div>
+    <h5><%= question[:question] %></h5>
+    <p><%= question[:answer] %></p>
+  </div>
+<% end %>
+
+<%= link_to 'ask a new question', ask_path %>
